@@ -26,6 +26,7 @@ public class TicTacToeGUI implements ActionListener, GameObserver
 
       // set up the user interface
       this.buttons = new TicTacToeButtons(board, this);
+      this.buttons.setPreferredSize(new Dimension(200,200));
       this.mainFrame = new JFrame("Tic Tac Toe");
       this.mainFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
