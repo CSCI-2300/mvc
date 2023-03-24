@@ -1,7 +1,7 @@
 package mvc.view;
 
+import mvc.ControllerInterface;
 import mvc.GameObserver;
-import mvc.controller.GameController;
 import mvc.model.TicTacToeBoard;
 
 import java.awt.*;
@@ -15,8 +15,8 @@ public class TicTacToeGUI implements ActionListener, GameObserver
    JPanel mainPanel;
    JLabel instructions;
    TicTacToeBoard board;
-   GameController controller;
-   public TicTacToeGUI(GameController controller, TicTacToeBoard board)
+   ControllerInterface controller;
+   public TicTacToeGUI(ControllerInterface controller, TicTacToeBoard board)
    {
       this.board = board;
       this.controller = controller;

@@ -1,11 +1,13 @@
 package mvc.controller;
 
+import mvc.ControllerInterface;
+
 import mvc.view.TicTacToeGUI;
 import mvc.model.TicTacToeBoard;
 import mvc.model.TicTacToePiece;
 import mvc.model.AutoPlayer;
 
-public class GameController
+public class GameController implements ControllerInterface
 {
    TicTacToeBoard board;
    AutoPlayer autoPlayer;

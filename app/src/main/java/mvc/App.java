@@ -8,7 +8,14 @@ import mvc.controller.*;
 public class App {
     public static void main(String[] args) {
         TicTacToeBoard board = new TicTacToeBoard();
-        AutoPlayer autoPlayer = new AutoPlayer(TicTacToePiece.X);
-        GameController controller = new GameController(board, autoPlayer);
+        if (args.length > 0)
+        {
+           GameControllerTwoPlayer controller = new GameControllerTwoPlayer(board); 
+        }
+        else
+        {
+           AutoPlayer autoPlayer = new AutoPlayer(TicTacToePiece.X);
+           GameController controller = new GameController(board, autoPlayer);
+        }
     }
 }
